@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Modelo</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <h1>COVID-19</h1>
+    <div style="display: none;" id="loadingIcon">
+      <span class="loadingSpan">
+        &#9881;
+      </span>
+    </div>
+    <div class="container wrap">
+      <section class="item">
+        <h5>Total Confirmados</h5>
+        <p id="totalConfirmed"></p>
+        <h6 id="dailyConfirmed"></h6>
+      </section>
+      <section class="item">
+        <h5>Total Mortes</h5>
+        <p id="totalDeath"></p>
+        <h6 id="dailyDeath"></h6>
+      </section>
+      <section class="item">
+        <h5>Total Recuperados</h5>
+        <p id="totalRecovered"></p>
+        <h6 id="dailyRecovered"></h6>
+      </section>
+      <section class="item">
+        <h5 id="actives">Total Ativos</h5>
+        <p id="totalActive"></p>
+        <h6 id="dailyActive"></h6>
+      </section>
+    </div>
+    <div>
+      <select class="custom-select" id="combo">
+        <option>Global</option>
+      </select>
+      <input id="today" type="date" min="2020-01-01" />
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
